@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_dim">30sp</dimen>
+    <dimen name="title_margin_top">150dp</dimen>
+    <dimen name="pillow_top">190dp</dimen>
+</resources>
