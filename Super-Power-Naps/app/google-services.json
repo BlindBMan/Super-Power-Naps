@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "322914614221",
+    "firebase_url": "https://super-power-naps.firebaseio.com",
+    "project_id": "super-power-naps",
+    "storage_bucket": "super-power-naps.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:322914614221:android:a66b64e9c98417df43a284",
+        "android_client_info": {
+          "package_name": "com.example.super_power_naps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "322914614221-30tke08bd37lfngnj7ei51pot302acur.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4PbQZ2KhCDYhBlpAOeSNPp2UPcdyR5zs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "322914614221-30tke08bd37lfngnj7ei51pot302acur.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
