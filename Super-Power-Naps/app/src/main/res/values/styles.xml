@@ -6,6 +6,14 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="buttonStyle">@style/CustomButton</item>
     </style>
-
+    
+    <style name="CustomButton" parent="TextAppearance.AppCompat.Button">
+        <item name="android:background">@drawable/custom_button</item>
+        <item name="android:paddingStart">@dimen/padding_btn_text</item>
+        <item name="android:paddingEnd">@dimen/padding_btn_text</item>
+        <item name="android:textSize">@dimen/text_btn</item>
+    </style>
+    
 </resources>

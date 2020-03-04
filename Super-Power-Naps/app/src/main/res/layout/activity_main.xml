@@ -19,11 +19,19 @@
         />
 
     <ImageView
+        android:layout_width="130dp"
+        android:layout_height="79dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/pillow_top"
+        android:contentDescription="@string/pillow_logo"
+        android:src="@drawable/blue_pillow22" />
+
+    <FrameLayout
+        android:id="@+id/main_btn_container"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="@string/pillow_logo"
-        android:src="@drawable/blue_pillow1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/pillow_top"/>
+        android:layout_marginTop="@dimen/main_btn_container_top"
+        />
 
 </RelativeLayout>

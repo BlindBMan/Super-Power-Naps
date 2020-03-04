@@ -3,4 +3,7 @@
     <dimen name="title_dim">30sp</dimen>
     <dimen name="title_margin_top">150dp</dimen>
     <dimen name="pillow_top">190dp</dimen>
+    <dimen name="main_btn_container_top">400dp</dimen>
+    <dimen name="text_btn">20sp</dimen>
+    <dimen name="padding_btn_text">30dp</dimen>
 </resources>
