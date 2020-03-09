@@ -6,4 +6,11 @@
     <dimen name="main_btn_container_top">400dp</dimen>
     <dimen name="text_btn">20sp</dimen>
     <dimen name="padding_btn_text">30dp</dimen>
+    <dimen name="email_margin_top">357dp</dimen>
+    <dimen name="password_margin_top">425dp</dimen>
+    <dimen name="name_margin_top">290dp</dimen>
+    <dimen name="border_radius">50dp</dimen>
+    <dimen name="padding_left_edit_text">20dp</dimen>
+    <dimen name="reg_field_width">300dp</dimen>
+    <dimen name="submit_margin_top">500dp</dimen>
 </resources>

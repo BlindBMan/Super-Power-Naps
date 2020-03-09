@@ -9,10 +9,10 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/custom_button"
-        android:text="@string/take_a_nap"
         android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/montserrat_alternates"
         android:onClick="takeANap"
-        />
+        android:text="@string/take_a_nap" />
 
 </RelativeLayout>

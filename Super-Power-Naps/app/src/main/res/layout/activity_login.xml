@@ -1,9 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".LoginActivity"
+    android:background="@color/dark_blue"
+    android:orientation="horizontal">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/title_margin_top"
+        android:text="@string/login"
+        android:textColor="@color/light_blue"
+        android:textSize="@dimen/title_dim"
+        android:fontFamily="@font/montserrat_alternates"
+        />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="@dimen/reg_field_width"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/email"
+        android:fontFamily="@font/montserrat_alternates"
+        android:textColorHint="@android:color/black"
+        android:background="@drawable/custom_edit_text"
+        android:layout_marginTop="@dimen/name_margin_top"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="@dimen/reg_field_width"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/password"
+        android:fontFamily="@font/montserrat_alternates"
+        android:textColorHint="@android:color/black"
+        android:background="@drawable/custom_edit_text"
+        android:layout_marginTop="@dimen/email_margin_top"
+        android:importantForAutofill="no"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:fontFamily="@font/montserrat_alternates"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/submit_margin_top"
+        />
+
+</RelativeLayout>
