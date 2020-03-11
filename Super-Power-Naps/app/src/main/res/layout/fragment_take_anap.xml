@@ -7,12 +7,12 @@
     tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/nap_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:background="@drawable/custom_button"
         android:fontFamily="@font/montserrat_alternates"
-        android:onClick="takeANap"
         android:text="@string/take_a_nap" />
 
 </RelativeLayout>
