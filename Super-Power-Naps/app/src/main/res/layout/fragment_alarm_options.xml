@@ -6,27 +6,40 @@
     android:layout_height="match_parent"
     tools:context=".AlarmOptionsFragment">
 
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/alarm_question"
+        android:textColor="@color/light_blue"
+        android:textSize="@dimen/text_size"
+        />
+
+    <Button
+        android:id="@+id/tired"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/first_option_margin_top"
         android:fontFamily="@font/montserrat_alternates"
         android:text="@string/tired"
         android:textSize="@dimen/text_btn"
         android:layout_centerHorizontal="true" />
 
     <Button
+        android:id="@+id/sleepy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="150dp"
         android:fontFamily="@font/montserrat_alternates"
         android:text="@string/sleepy"
         android:textSize="@dimen/text_btn"
         android:layout_centerHorizontal="true"/>
 
     <Button
+        android:id="@+id/normal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="110dp"
+        android:layout_marginTop="205dp"
         android:fontFamily="@font/montserrat_alternates"
         android:text="@string/normal"
         android:textSize="@dimen/text_btn"

@@ -14,5 +14,6 @@
     <dimen name="reg_field_width">300dp</dimen>
     <dimen name="submit_margin_top">500dp</dimen>
     <dimen name="text_size">23sp</dimen>
-    <dimen name="options_container_margin_top">400dp</dimen>
+    <dimen name="options_container_margin_top">250dp</dimen>
+    <dimen name="first_option_margin_top">95dp</dimen>
 </resources>
