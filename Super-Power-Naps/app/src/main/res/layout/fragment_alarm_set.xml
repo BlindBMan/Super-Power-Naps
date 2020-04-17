@@ -4,15 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".AlarmSetFragment">
 
     <Button
-        android:id="@+id/nap_btn"
+        android:id="@+id/cancel_alarm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/custom_button"
+        android:layout_marginTop="@dimen/first_option_margin_top"
         android:fontFamily="@font/montserrat_alternates"
-        android:text="@string/take_a_nap" />
+        android:textSize="@dimen/text_btn"
+        android:text="@string/cancel_alarm"
+        android:layout_centerHorizontal="true" />
+
 
 </RelativeLayout>

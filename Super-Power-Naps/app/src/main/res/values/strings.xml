@@ -9,4 +9,10 @@
     <string name="submit">Submit</string>
     <string name="name">Name</string>
     <string name="login">Login</string>
+    <string name="alarm_title">Nap</string>
+    <string name="alarm_question">How are you feeling?</string>
+    <string name="tired">Tired</string>
+    <string name="sleepy">Sleepy</string>
+    <string name="normal">Normal</string>
+    <string name="cancel_alarm">Cancel alarm</string>
 </resources>
