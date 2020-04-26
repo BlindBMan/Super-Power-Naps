@@ -16,4 +16,8 @@
     <dimen name="text_size">23sp</dimen>
     <dimen name="options_container_margin_top">250dp</dimen>
     <dimen name="first_option_margin_top">95dp</dimen>
+    <dimen name="unsigned_btns_margin_top">600dp</dimen>
+    <dimen name="logout_btn_marginStart">250dp</dimen>
+    <dimen name="register_btn_marginStart">240dp</dimen>
+    <dimen name="login_marginStart">10dp</dimen>
 </resources>

@@ -26,4 +26,13 @@
         android:layout_marginTop="@dimen/options_container_margin_top"
         />
 
+    <FrameLayout
+        android:id="@+id/alarms_btn_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/unsigned_btns_margin_top"
+        android:layout_marginStart="@dimen/register_btn_marginStart"
+        />
+
 </RelativeLayout>

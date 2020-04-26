@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class MainActivity extends AppCompatActivity implements TakeANapFragment.OnTakeNapClickListener {
 
     @Override
@@ -17,22 +19,14 @@ public class MainActivity extends AppCompatActivity implements TakeANapFragment.
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.main_btn_container, new TakeANapFragment()).commit();
 
-//        Button login = findViewById(R.id.login_btn_main);
-//        Button register = findViewById(R.id.register_btn);
-//
-//        login.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                startActivity(new Intent(getApplicationContext(), LoginActivity.class));
-//            }
-//        });
-//
-//        register.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                startActivity(new Intent(getApplicationContext(), RegisterActivity.class));
-//            }
-//        });
+        if (FirebaseAuth.getInstance().getCurrentUser() != null) {
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.logout_btn_container, new LogoutFragment()).commit();
+        }
+        else {
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.unsigned_btns_container, new SignInFragment()).commit();
+        }
     }
 
 

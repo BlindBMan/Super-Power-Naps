@@ -34,22 +34,20 @@
         android:layout_marginTop="@dimen/main_btn_container_top"
         />
 
-<!--    Buttons to check login/register services-->
 
-<!--    <Button-->
-<!--        android:id="@+id/register_btn"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Register"-->
-<!--        android:layout_marginTop="500dp"-->
-<!--        android:layout_marginStart="240dp"-->
-<!--        />-->
+    <FrameLayout
+        android:id="@+id/unsigned_btns_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/unsigned_btns_margin_top"
+        />
 
-<!--    <Button-->
-<!--        android:id="@+id/login_btn_main"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="Login"-->
-<!--        android:layout_marginTop="500dp"-->
-<!--        />-->
+    <FrameLayout
+        android:id="@+id/logout_btn_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/unsigned_btns_margin_top"
+        android:layout_marginStart="@dimen/logout_btn_marginStart"
+        />
+
 </RelativeLayout>
