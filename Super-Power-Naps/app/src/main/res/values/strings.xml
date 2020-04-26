@@ -15,4 +15,8 @@
     <string name="sleepy">Sleepy</string>
     <string name="normal">Normal</string>
     <string name="cancel_alarm">Cancel alarm</string>
+    <string name="error">error</string>
+    <string name="logout">Logout</string>
+    <string name="show_alarms">Alarms</string>
+    <string name="tips">Tips</string>
 </resources>

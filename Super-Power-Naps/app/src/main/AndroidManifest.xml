@@ -11,7 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AlarmSetFragment"></activity>
+        <activity android:name=".SignInFragment"></activity>
+        <activity android:name=".LogoutFragment" />
+        <activity android:name=".Room_Database.AlarmsTipsActivity" />
+        <activity android:name=".Room_Database.AlarmsTipsBtnFragment" />
+        <activity android:name=".Room_Database.User" />
+        <activity android:name=".AlarmSetFragment" />
         <activity android:name=".AlarmOptionsFragment" />
         <activity android:name=".AlarmActivity" />
         <activity android:name=".RegisterActivity" />

@@ -3,6 +3,7 @@ package com.example.super_power_naps;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.Observer;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
@@ -14,14 +15,19 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.example.super_power_naps.Room_Database.UserRepository;
+import com.google.firebase.auth.FirebaseAuth;
+
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 
 public class AlarmOptionsFragment extends Fragment {
 
     private AlarmManager alarmManager;
     private PendingIntent pendingIntent;
+    private UserRepository userRepository;
 
     @Nullable
     @Override
@@ -32,7 +38,10 @@ public class AlarmOptionsFragment extends Fragment {
         Intent intent = new Intent(getContext(), AlarmReceiver.class);
         pendingIntent = PendingIntent.getBroadcast(getContext(), 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
 
-
+        if (FirebaseAuth.getInstance().getCurrentUser() != null) {
+            String uid = FirebaseAuth.getInstance().getCurrentUser().getUid();
+            userRepository = new UserRepository(view.getContext(), uid);
+        }
         view.findViewById(R.id.tired).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -62,6 +71,10 @@ public class AlarmOptionsFragment extends Fragment {
         Date date = new Date();
         SimpleDateFormat mins = new SimpleDateFormat("mm");
         SimpleDateFormat hour = new SimpleDateFormat("hh");
+
+        if (userRepository != null) {
+            userRepository.update(date.toString());
+        }
 
         calendar.set(Calendar.HOUR, Integer.parseInt(hour.format(date)));
         calendar.set(Calendar.MINUTE, Integer.parseInt(mins.format(date)) + minutes);

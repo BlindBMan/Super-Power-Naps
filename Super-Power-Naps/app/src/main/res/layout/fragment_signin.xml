@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInFragment">
+
+    <Button
+        android:id="@+id/login_frag_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_btn"
+        android:fontFamily="@font/montserrat_alternates"
+        android:text="@string/login"
+        android:layout_marginStart="@dimen/login_marginStart"
+        />
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_btn"
+        android:fontFamily="@font/montserrat_alternates"
+        android:text="@string/register"
+        android:layout_marginStart="@dimen/register_btn_marginStart"
+        />
+
+</RelativeLayout>
